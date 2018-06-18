@@ -18,13 +18,6 @@ public class ItemPedidoPK implements Serializable {
 	@JoinColumn(name="produto_id")
 	private Produto produto;
 	
-	public ItemPedidoPK() {}
-	
-	public ItemPedidoPK(Pedido pedido, Produto produto) {
-		super();
-		this.pedido = pedido;
-		this.produto = produto;
-	}
 
 	public Pedido getPedido() {
 		return pedido;
